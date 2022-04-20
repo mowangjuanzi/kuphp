@@ -9,3 +9,8 @@
 ```bash
 npx honkit serve
 ```
+
+## 环境
+
+- Ubuntu 22.04
+- PHP 8.1
