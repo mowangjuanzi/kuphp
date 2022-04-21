@@ -25,10 +25,20 @@
 * [编程语言](language/README.md)
     * [PHP](language/php/README.md)
     * [Go](language/golang/README.md)
+        * 基础
+        * 深入
+        * CLI
+        * ORM
+        * Web 框架
+        * 日志记录
+        * 实时通讯
+        * API 客户端
+        * 测试
+        * 微服务工具
     * JavaScript
     * C
 * 版本控制
-    * Git 基础用法
+    * Git 基础
     * 仓库托管服务
         * GitHub
 * 关系型数据库
@@ -43,11 +53,11 @@
     * 数据复制
     * 分片
     * CAP 定理
-* NoSQL 数据库
-    * 文档型
-    * 列存储
-    * 时序
-    * 实时
+    * NoSQL 数据库
+        * 文档型
+        * 列存储
+        * 时序
+        * 实时
 * API
 * [缓存](caching/README.md)
     * CDN
@@ -58,7 +68,7 @@
 * 测试
 * CI/CD
 * 设计和开发原则
-* 架构模式
+    * 架构模式
 * 搜索引擎
 * 消息代理
 * 容器化与虚拟化

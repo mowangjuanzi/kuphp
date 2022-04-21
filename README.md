@@ -4,10 +4,25 @@
 
 使用 [HonKit](https://github.com/honkit/honkit) 创建的文档。
 
-运行：
+## 链接
+
+项目地址：https://github.com/mowangjuanzi/kuphp
+
+实时预览：https://kuphp.baoguoxiao.com
+
+## 运行
+
+拉取
 
 ```bash
-npx honkit serve
+git clone git@github.com:mowangjuanzi/kuphp.git
+```
+
+安装，运行
+
+```bash
+npm install
+npm run serve
 ```
 
 ## 环境
