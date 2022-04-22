@@ -8,7 +8,7 @@
 
 项目地址：https://github.com/mowangjuanzi/kuphp
 
-实时预览：https://kuphp.baoguoxiao.com
+GitHub Page：https://kuphp.baoguoxiao.com
 
 ## 运行
 
