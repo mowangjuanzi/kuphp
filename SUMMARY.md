@@ -35,7 +35,7 @@
         * API 客户端
         * 测试
         * 微服务工具
-    * JavaScript
+    * [JavaScript](language/javascript/README.md)
     * C
 * 版本控制
     * Git 基础
@@ -72,6 +72,7 @@
 * 搜索引擎
 * 消息代理
 * 容器化与虚拟化
+    * [Docker](./containerization/docker/README.md)
 * GraphQL
 * 图数据库
 * WebSocket
