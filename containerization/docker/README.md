@@ -83,4 +83,4 @@ sudo apt install docker-compose
 >
 > We would like to make the Compose V2 transition to be as smooth as possible for all users. We currently don’t have a concrete timeline to deprecate Compose V1. We will review the feedback from the community on the GA and the adoption on Linux, and come up with a plan to deprecate Compose V1. We are not planning to remove the aliasing of to . We would like to make it easier for users to switch to V2 without breaking any existing scripts. We will follow up with a blog post with more information on the exact timeline on V1 deprecation and the end of support policies for security issues.
 >
-> 该段内容表示并没有明确的弃用计划。
+> 该段内容表示并没有明确的弃用计划。所以继续使用 v1 也没有什么问题。
