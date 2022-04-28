@@ -1,10 +1,10 @@
 # Summary
 
 * [简介](README.md)
-* 互联网
-    * 互联网工作方式
-    * HTTP
-    * 浏览器工作方式
+* [互联网](internet/README.md)
+    * [互联网工作方式](internet/internet-work/README.md)
+    * [HTTP](internet/http/README.md)
+    * [浏览器工作方式](internet/browser-work/README.md)
     * DNS
     * 域名
     * 托管
