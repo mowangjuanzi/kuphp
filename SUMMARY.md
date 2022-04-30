@@ -5,7 +5,7 @@
     * [互联网工作方式](internet/internet-work/README.md)
     * [HTTP](internet/http/README.md)
     * [浏览器工作方式](internet/browser-work/README.md)
-    * DNS
+    * [DNS](internet/dns/README.md)
     * 域名
     * 托管
 * 基础前端
@@ -24,6 +24,8 @@
     * 网络概念
 * [编程语言](language/README.md)
     * [PHP](language/php/README.md)
+        * [深入](language/php/deeper/README.md)
+            * [Composer](language/php/deeper/composer/README.md)
     * [Go](language/golang/README.md)
         * 基础
         * 深入
