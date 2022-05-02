@@ -79,5 +79,7 @@
 * GraphQL
 * 图数据库
 * WebSocket
-* Web 服务器
+* [Web 服务器](web_server/README.md)
+    * [nginx](web_server/nginx/README.md)
+        * [控制 nginx](web_server/nginx/control.md)
 * 大规模构建

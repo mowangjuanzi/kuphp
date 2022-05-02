@@ -9,7 +9,7 @@
 执行如下命令即可：
 
 ```bash
-sudo apt show docker.io
+sudo apt install docker.io
 ```
 
 查看版本：
