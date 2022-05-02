@@ -76,6 +76,6 @@ sudo systemctl status nginx
 sudo systemctl disable nginx
 ```
 
-## 扩展
+## 更多
 
 - [Centos yum 安装 nginx](https://www.baoguoxiao.com/2017/11/17/yum-install-nginx/)
