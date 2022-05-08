@@ -7,6 +7,21 @@
 - 内置并发和强大的标准库
 - 不断发展的生态系统（合作伙伴、社区和工具）
 
+## 安装
+
+直接执行如下命令即可：
+
+```bash
+sudo apt install golang
+```
+
+查看版本：
+
+```bash
+$ go version
+go version go1.18.1 linux/amd64
+```
+
 ## 相关网址
 
 - 官网：https://go.dev/

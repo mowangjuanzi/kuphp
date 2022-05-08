@@ -11,14 +11,14 @@ Elasticsearch 是搜索引擎，可以通过它实现很多功能。
 在安装之前我们需要下载和安装公钥，否则没有办法使用 apt 安装 Elasticsearch。
 
 ```bash
-wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg
+wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
 ```
 
 添加源：
 
 ```bash
 sudo apt install apt-transport-https
-echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://artifacts.elastic.co/packages/8.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-8.x.list
+echo "deb https://artifacts.elastic.co/packages/8.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-8.x.list
 ```
 
 ### 安装Elasticsearch
