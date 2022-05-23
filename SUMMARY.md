@@ -84,4 +84,8 @@
 * [Web 服务器](web_server/README.md)
     * [nginx](web_server/nginx/README.md)
         * [控制 nginx](web_server/nginx/control.md)
-* 大规模构建
+* [大规模构建](scalability/README.md)
+    * [了解差异](scalability/understand_diff/README.md)
+    * [迁移策略](scalability/migration_strategies/README.md)
+    * [水平扩展 & 垂直扩展](scalability/horizontal_vs_vertical_scaling/README.md)
+    * [可观察性](scalability/observability/README.md)
