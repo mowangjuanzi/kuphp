@@ -11,17 +11,17 @@ Elasticsearch 是搜索引擎，可以通过它实现很多功能。
 在安装之前我们需要下载和安装公钥，否则没有办法使用 apt 安装 Elasticsearch。
 
 ```bash
-wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg
 ```
 
 添加源：
 
 ```bash
 sudo apt install apt-transport-https
-echo "deb https://artifacts.elastic.co/packages/8.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-8.x.list
+echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://artifacts.elastic.co/packages/8.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-8.x.list
 ```
 
-### 安装Elasticsearch
+### 安装 Elasticsearch
 
 接下来，我们就可以更新源毕竟切装Es了：
 
@@ -59,7 +59,15 @@ Generate an enrollment token for Elasticsearch nodes with
 
 在安装完成后，需要执行以下命令从而启动服务。
 
-因为从 v8 开始默认开启并启动安全功能，所以默认会启动认证，并为超级用户 `elastic` 生成一个密码，密码就在上面的 `<password>`。
+因为从 v8.0 开始默认开启并启动安全功能，所以默认会启动认证，并为超级用户 `elastic` 生成一个密码，密码就在上面的 `<password>`。
+
+<!-- > 首先在默认配置文件 **/etc/elasticsearch/elasticsearch.yml** 中添加如下配置：
+> 
+> ```yaml
+> xpack.security.enrollment.enabled: true
+> xpack.security.transport.ssl.enabled: false
+> xpack.security.http.ssl.enabled: false
+> ``` -->
 
 ### Elasticsearch 命令管理
 
@@ -109,15 +117,15 @@ Enter host password for user 'elastic':
 {
   "name" : "mowangjuanzi",
   "cluster_name" : "elasticsearch",
-  "cluster_uuid" : "ou4fHe86RQ2lEz6-t8cA3g",
+  "cluster_uuid" : "5QdhW1qDTa-vp40u2sQUtA",
   "version" : {
-    "number" : "8.1.3",
+    "number" : "8.2.0",
     "build_flavor" : "default",
     "build_type" : "deb",
-    "build_hash" : "39afaa3c0fe7db4869a161985e240bd7182d7a07",
-    "build_date" : "2022-04-19T08:13:25.444693396Z",
+    "build_hash" : "b174af62e8dd9f4ac4d25875e9381ffe2b9282c5",
+    "build_date" : "2022-04-20T10:35:10.180408517Z",
     "build_snapshot" : false,
-    "lucene_version" : "9.0.0",
+    "lucene_version" : "9.1.0",
     "minimum_wire_compatibility_version" : "7.17.0",
     "minimum_index_compatibility_version" : "7.0.0"
   },
@@ -136,27 +144,39 @@ Elasticsearch 默认情况下从 **/etc/elasticsearch/elasticsearch.yml** 文件
 
 Debian 包也有一个系统配置文件（`/etc/default/elasticsearch`），它允许你设置以下参数：
 
-| 参数 | 解释 |
-| --- | --- |
-| `ES_JAVA_HOME` | 设置要使用的自定义 Java 路径 |
-| `ES_PATH_CONF` | 配置文件目录（需要包含 `elasticsearch.yml`, `jvm.options` 和 `log4j2.properties` 文件），默认路径是： `/etc/elasticsearch` |
-| `ES_JAVA_OPTS` | 你可能希望应用的任何其他 JVM 系统属性。 |
+| 参数                   | 解释                                                                                                                |
+|----------------------|-------------------------------------------------------------------------------------------------------------------|
+| `ES_JAVA_HOME`       | 设置要使用的自定义 Java 路径                                                                                                 |
+| `ES_PATH_CONF`       | 配置文件目录（需要包含 `elasticsearch.yml`, `jvm.options` 和 `log4j2.properties` 文件），默认路径是： `/etc/elasticsearch`              |
+| `ES_JAVA_OPTS`       | 你可能希望应用的任何其他 JVM 系统属性。                                                                                            |
 | `RESTART_ON_UPGRADE` | 配置软件包升级时将会重新启动，默认是 `false` 。这意味着你在手动安装软件包之后重启elasticsearch实例。这样做的原因是为了保障, 在集群中更新时，在高流量网络和减少你集群的响应时间的情况下导致分片的重新分配。 |
 
 ### 包的目录布局
 
-| 类型 | 描述 | 默认路径 | 设置 |
-| --- | --- | --- | --- |
-| **home** | Elasticsearch home 目录或者 `$ES_HOME` | `/usr/share/elasticsearch` |  |
-| **bin** | 二进制脚本，包括 `elasticsearch` 去启动节点和 `elasticsearch-plugin` 安装插件 | `/usr/share/elasticsearch/bin` |  |
-| **conf** | 配置文件，包含 `elasticsearch.yml` | `/etc/elasticsearch` | `[ES_PATH_CONF](https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html#config-files-location)` |
-| **conf** | 环境变量，包含 heap size，文件描述符。 | `/etc/default/elasticsearch` |  |
-| **conf** | 为传输层和 http 层生成的 TLS 密钥和证书。 | `/etc/elasticsearch/certs` | |
-| **data** | 在节点上分配的每个索引/分片的数据文件的位置。 | `/var/lib/elasticsearch` | `path.data` |
-| **jdk** | 用于捆绑运行 ElasticSearch 的 JDK。可以通过在 `/etc/default/elasticsearch` 中设置 `ES_JAVA_HOME` 环境变量来覆盖。 | `/usr/share/elasticsearch/jdk` |  |
-| **logs** | 日志文件位置。 | `/var/log/elasticsearch` | `path.logs` |
-| **plugins** | 插件文件位置。每个插件将包含在一个子目录中. | `/usr/share/elasticsearch/plugins` |  |
-| **repo** | 共享文件系统存储库位置。可以容纳多个位置。文件系统存储库可以放置在指定目录中任何子目录中。 | 不能配置 | `path.repo` |
+| 类型          | 描述                                                                                        | 默认路径                               | 设置                                                                                                                    |
+|-------------|-------------------------------------------------------------------------------------------|------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| **home**    | Elasticsearch home 目录或者 `$ES_HOME`                                                        | `/usr/share/elasticsearch`         |                                                                                                                       |
+| **bin**     | 二进制脚本，包括 `elasticsearch` 去启动节点和 `elasticsearch-plugin` 安装插件                               | `/usr/share/elasticsearch/bin`     |                                                                                                                       |
+| **conf**    | 配置文件，包含 `elasticsearch.yml`                                                               | `/etc/elasticsearch`               | [`ES_PATH_CONF`](https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html#config-files-location) |
+| **conf**    | 环境变量，包含 heap size，文件描述符。                                                                  | `/etc/default/elasticsearch`       |                                                                                                                       |
+| **conf**    | 为传输层和 http 层生成的 TLS 密钥和证书。                                                                | `/etc/elasticsearch/certs`         |                                                                                                                       |
+| **data**    | 在节点上分配的每个索引/分片的数据文件的位置。                                                                   | `/var/lib/elasticsearch`           | `path.data`                                                                                                           |
+| **jdk**     | 用于捆绑运行 ElasticSearch 的 JDK。可以通过在 `/etc/default/elasticsearch` 中设置 `ES_JAVA_HOME` 环境变量来覆盖。 | `/usr/share/elasticsearch/jdk`     |                                                                                                                       |
+| **logs**    | 日志文件位置。                                                                                   | `/var/log/elasticsearch`           | `path.logs`                                                                                                           |
+| **plugins** | 插件文件位置。每个插件将包含在一个子目录中.                                                                    | `/usr/share/elasticsearch/plugins` |                                                                                                                       |
+| **repo**    | 共享文件系统存储库位置。可以容纳多个位置。文件系统存储库可以放置在指定目录中任何子目录中。                                             | 不能配置                               | `path.repo`                                                                                                           |
+
+## 修复监听 IP 配置
+
+在配置的时候，发现 Kibana 不能正常连接到 Elasticsearch。通过排查，发现问题就出现在监听的网络地址上。因为安全原因默认只是监听 `localhost`。
+
+可以通过修改以下配置文件来修复这个问题。
+
+```yaml
+network.host: _site_
+```
+
+关于原因，可以参考 [Special values for network addressesedit](https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-network.html#network-interface-values)。
 
 ## 参考
 

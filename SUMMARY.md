@@ -26,6 +26,7 @@
     * [PHP](language/php/README.md)
         * [深入](language/php/deeper/README.md)
             * [Composer](language/php/deeper/composer/README.md)
+            * [Swoole](language/php/deeper/swoole/README.md)
     * [Go](language/golang/README.md)
         * 基础
         * 深入
@@ -43,8 +44,8 @@
     * Git 基础
     * 仓库托管服务
         * GitHub
-* 关系型数据库
-    * MySQL
+* [关系型数据库](relational_databases/README.md)
+    * [MySQL](relational_databases/mysql/README.md)
 * 更多数据库内容
     * ORM
     * ACID
@@ -73,6 +74,7 @@
     * 架构模式
 * [搜索引擎](./search_engine/README.md)
     * [ElasticSearch](./search_engine/elasticsearch/README.md)
+        * [Kibana](search_engine/elasticsearch/kibana.md)
 * 消息代理
 * 容器化与虚拟化
     * [Docker](./containerization/docker/README.md)
