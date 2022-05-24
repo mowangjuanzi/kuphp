@@ -78,8 +78,8 @@
 * 消息代理
 * 容器化与虚拟化
     * [Docker](./containerization/docker/README.md)
-* GraphQL
-* 图数据库
+* [GraphQL](graph_database/README.md)
+* [图数据库](graph_database/README.md)
 * WebSocket
 * [Web 服务器](web_server/README.md)
     * [nginx](web_server/nginx/README.md)
