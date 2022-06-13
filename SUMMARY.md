@@ -6,13 +6,13 @@
     * [HTTP](internet/http/README.md)
     * [浏览器工作方式](internet/browser-work/README.md)
     * [DNS](internet/dns/README.md)
-    * 域名
-    * 托管
+    * [域名](internet/domain_name/README.md)
+    * [托管](internet/hosting/README.md)
 * 基础前端
     * HTML
     * CSS
     * JavaScript
-* 操作系统
+* [操作系统](os/README.md)
     * 终端
     * 进程管理
     * 线程和并发
