@@ -4,6 +4,6 @@
         "serve": "honkit serve"
     },
     "dependencies": {
-        "honkit": "^3.7.1"
+        "honkit": "^3.7.4"
     }
 }
