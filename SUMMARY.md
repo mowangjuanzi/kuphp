@@ -28,7 +28,7 @@
             * [Composer](language/php/deeper/composer/README.md)
             * [Swoole](language/php/deeper/swoole/README.md)
     * [Go](language/golang/README.md)
-        * 基础
+        * [基础](language/golang/basic.md)
         * 深入
         * CLI
         * ORM
