@@ -32,7 +32,7 @@ $ npm -v
 可能你安装的时候 npm 不是最新版本，可以使用如下命令更新到最新版本：
 
 ```bash
-sudo npm install -g npm
+sudo npm install --location=global npm
 ```
 
 ## 安装 yarn 及其其他的包管理

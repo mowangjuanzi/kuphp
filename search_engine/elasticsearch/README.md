@@ -178,6 +178,18 @@ network.host: _site_
 
 关于原因，可以参考 [Special values for network addressesedit](https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-network.html#network-interface-values)。
 
+## 禁止 Elasticsearch 升级
+
+```bash
+sudo apt-mark hold elasticsearch
+```
+
+取消禁止：
+
+```bash
+sudo apt-mark unhold elasticsearch
+```
+
 ## 参考
 
 - [官网](https://www.elastic.co/)
