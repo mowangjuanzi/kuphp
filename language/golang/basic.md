@@ -43,7 +43,7 @@ func main() {
 通过这几行代码，我们来管中窥豹一下 Go。
 
 - `package` 这个是定义包名的意思，作用是对函数（`func`）进行分组。而 `main` 意思代表该文件是入口文件。一切从这里开始执行。
-- `import` 就是导入。这里我们通过导入 [`fmt`](https://pkg.go.dev/fmt) 来实现打印命令。
+- `import` 就是导入。这里我们通过导入 [`fmt`](https://pkg.go.dev/fmt) 来实现打印命令。按照约定，导入路径的最后一个元素就是包名。
 - `func` 就是定义函数。`main` 代表这个是该函数是入口函数。执行函数从该函数开始执行。
 - `fmt.Println` 这是要调用的打印方法。这里注意两个地方，如果是之前学的是 PHP，那么调用方法主要是 `->` 或者 `::`，而这里主要是靠 `.`。并且还有一个问题是调用的函数首字母是大写的，在 Go 中并没有面向对象的 `Public` 或者 `Private` 的概念，所以通过首字母大写的方式表示该函数可以被外部调用。
 
@@ -64,6 +64,32 @@ $ ./main
 hello go!
 ```
 
+## 关键字
+
+关键字不能用作变量，常量，函数等等的名字。它们都有特殊的用途。
+
+```go
+break        default      func         interface    select
+case         defer        go           map          struct
+chan         else         goto         package      switch
+const        fallthrough  if           range        type
+continue     for          import       return       var
+```
+
+这些后续都会进行解释。
+
 ## 数据类型
 
-// TODO...
+Go 存在的数据类型很多。大概分为如下几类：
+
+### 数字类型
+
+- `int8` 与 `uint8`
+
+这两个都是占用一个字节。但是区别就是 `uint8` 属于无符号。`int8` 的范围就是 `-128` ~ `127`。而 `uint8` 的范围就是 `0` ~ `255`。
+
+- 整数：`int`, `int8`, `int16`, `int32`, `int64`, `uint`, `uint8`, `uint16`, `uint32`, `uint64`, `rune`, `byte`, `uintptr`
+- 浮点数：`float32`, `float64`
+- 复数：complex64, complex128
+- bool
+- string
