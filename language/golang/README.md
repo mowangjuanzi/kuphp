@@ -40,7 +40,7 @@ echo "export GOPROXY=https://proxy.golang.com.cn,direct" >> ~/.zshrc && source ~
 
 ## 编辑器
 
-免费的建议使用 [VS Code](https://code.visualstudio.com/)（配合 [Go 扩展](https://marketplace.visualstudio.com/items?itemName=golang.Go)使用更香），不差钱的可以上[GoLand](https://www.jetbrains.com.cn/go/)。
+免费的建议使用 [VS Code](https://code.visualstudio.com/)（配合 [Go 扩展](https://marketplace.visualstudio.com/items?itemName=golang.Go)使用更香），不差钱的可以上 [GoLand](https://www.jetbrains.com.cn/go/)。
 
 ## 相关网址
 
