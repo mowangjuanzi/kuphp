@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-3edc93ea","path":"/knowledge/scalability/","title":"\u5927\u89C4\u6A21\u6784\u5EFA","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1657191086000,"contributors":[{"name":"mowangjuanzi","email":"baoguoxiao0538@hotmail.com","commits":1}]},"filePathRelative":"knowledge/scalability/README.md"}');export{a as data};

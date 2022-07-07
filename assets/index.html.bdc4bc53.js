@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-219412e0","path":"/knowledge/graphql/","title":"GraphQL","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1657191086000,"contributors":[{"name":"mowangjuanzi","email":"baoguoxiao0538@hotmail.com","commits":1}]},"filePathRelative":"knowledge/graphql/README.md"}');export{e as data};

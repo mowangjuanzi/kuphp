@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-25c0f16c","path":"/knowledge/internet/dns/","title":"DNS","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1657191086000,"contributors":[{"name":"mowangjuanzi","email":"baoguoxiao0538@hotmail.com","commits":1}]},"filePathRelative":"knowledge/internet/dns/README.md"}');export{e as data};
