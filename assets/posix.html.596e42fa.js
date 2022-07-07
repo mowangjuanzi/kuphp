@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2d264a57","path":"/knowledge/os/posix.html","title":"POSIX \u57FA\u7840","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1657207570000,"contributors":[{"name":"mowangjuanzi","email":"baoguoxiao0538@hotmail.com","commits":1}]},"filePathRelative":"knowledge/os/posix.md"}');export{e as data};
