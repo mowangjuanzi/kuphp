@@ -14,4 +14,4 @@ HTTP 无状态，有会话
 
 ## 报文
 
-![HTTP Request](/images/HTTP_Request.png)
+![HTTP Request](/HTTP_Request.png)
