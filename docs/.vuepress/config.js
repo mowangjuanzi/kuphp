@@ -3,7 +3,17 @@ const {defaultTheme} = require("vuepress");
 module.exports = {
     title: "酷PHP",
     lang: "zh-CN",
+    head: [
+        [
+            "link",
+            {
+                rel: "icon",
+                href: "/logo.png"
+            }
+        ]
+    ],
     theme: defaultTheme({
+        logo: "/logo.png",
         locales: {
             "/": {
                 navbar: [
@@ -36,7 +46,7 @@ module.exports = {
                             ]
                         },
                         {
-                            text: "前端",
+                            text: "基础前端",
                             link: "/knowledge/frontend/README.md",
                             children: [
                                 "/knowledge/frontend/html.md",
@@ -65,6 +75,7 @@ module.exports = {
                             link: "/knowledge/language/php/README.md",
                             children: [
                                 "/knowledge/language/golang/README.md",
+                                "/knowledge/language/php/README.md",
                                 "/knowledge/language/javascript/README.md",
                             ]
                         },
