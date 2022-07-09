@@ -14,12 +14,13 @@ module.exports = {
     ],
     theme: defaultTheme({
         logo: "/logo.png",
+        repo: "mowangjuanzi/kuphp",
         locales: {
             "/": {
                 navbar: [
                     {
                         text: "知识体系",
-                        link: "/knowledge"
+                        link: "/knowledge",
                     },
                     {
                         text: "资源",
@@ -72,7 +73,7 @@ module.exports = {
                         },
                         {
                             text: "编程语言",
-                            link: "/knowledge/language/php/README.md",
+                            link: "/knowledge/language/README.md",
                             children: [
                                 "/knowledge/language/golang/README.md",
                                 "/knowledge/language/php/README.md",
@@ -101,16 +102,107 @@ module.exports = {
                             ]
                         },
                         {
+                            text: "数据库更多知识",
+                            link: "/knowledge/db_more/README.md",
+                            children: [
+                                "/knowledge/db_more/orm.md",
+                                "/knowledge/db_more/acid.md",
+                                "/knowledge/db_more/transaction.md",
+                                "/knowledge/db_more/n_plus_1.md",
+                                "/knowledge/db_more/replication.md",
+                                "/knowledge/db_more/sharding.md",
+                                "/knowledge/db_more/cap.md",
+                            ]
+                        },
+                        {
+                            text: "NoSQL",
+                            link: "/knowledge/nosql/README.md",
+                            children: [
+                                "/knowledge/nosql/document.md",
+                                "/knowledge/nosql/column.md",
+                                "/knowledge/nosql/time_series.md",
+                                "/knowledge/nosql/realtime.md",
+                            ]
+                        },
+                        {
+                            text: "API",
+                            link: "/knowledge/api/README.md",
+                            children: [
+                                "/knowledge/api/authentication.md",
+                                "/knowledge/api/rest.md",
+                                "/knowledge/api/json.md",
+                                "/knowledge/api/grpc.md",
+                            ]
+                        },
+                        {
                             text: "缓存",
                             link: "/knowledge/caching/README.md",
                             children: [
                                 {
                                     text: "服务器端",
-                                    link: "/knowledge/caching/server_side/README.md",
+                                    link: "/knowledge/caching/server/README.md",
                                     children: [
-                                        "/knowledge/caching/server_side/redis/README.md"
+                                        "/knowledge/caching/server/redis/README.md"
                                     ]
                                 },
+                                "/knowledge/caching/client.md",
+                                "/knowledge/caching/cdn.md",
+                            ]
+                        },
+                        {
+                            text: "Web 安全",
+                            link: "/knowledge/security/README.md",
+                            children: [
+                                {
+                                    text: "散列算法",
+                                    collapsible: true,
+                                    children: [
+                                        "/knowledge/security/hashing/md5.md",
+                                        "/knowledge/security/hashing/sha.md",
+                                        "/knowledge/security/hashing/crypt.md",
+                                    ]
+                                },
+                                "/knowledge/security/http/https.md",
+                                "/knowledge/security/http/csp.md",
+                                "/knowledge/security/http/cors.md",
+                                "/knowledge/security/http/ssl.md",
+                                "/knowledge/security/http/owasp.md",
+                            ]
+                        },
+                        {
+                            text: "测试",
+                            link: "/knowledge/testing/README.md",
+                            children: [
+                                "/knowledge/testing/integration.md",
+                                "/knowledge/testing/unit.md",
+                                "/knowledge/testing/functional.md",
+                            ]
+                        },
+                        {
+                            text: "CI/CD",
+                            link: "/knowledge/continue/README.md",
+                            children: [
+
+                            ]
+                        },
+                        {
+                            text: "设计和开发原则",
+                            link: "/knowledge/principles/README.md",
+                            children: [
+                                "/knowledge/principles/solid.md",
+                                "/knowledge/principles/kiss.md",
+                                "/knowledge/principles/yagni.md",
+                                "/knowledge/principles/dry.md",
+                            ]
+                        },
+                        {
+                            text: "架构模式",
+                            link: "/knowledge/architectural/README.md",
+                            children: [
+                                "/knowledge/architectural/monolithic.md",
+                                "/knowledge/architectural/microservices.md",
+                                "/knowledge/architectural/soa.md",
+                                "/knowledge/architectural/serverless.md",
                             ]
                         },
                         {
@@ -118,6 +210,13 @@ module.exports = {
                             link: "/knowledge/search_engine/README.md",
                             children: [
                                 "/knowledge/search_engine/elasticsearch/README.md"
+                            ]
+                        },
+                        {
+                            text: "消息代理",
+                            link: "/knowledge/message/README.md",
+                            children: [
+                                "/knowledge/message/rabbitmq.md",
                             ]
                         },
                         {
@@ -130,15 +229,19 @@ module.exports = {
                             text: "GraphQL",
                             link: "/knowledge/graphql/README.md",
                             children: [
-
+                                "/knowledge/graphql/apollo.md"
                             ]
                         },
                         {
                             text: "图数据库",
-                            link: "/knowledge/graph_database/README.md",
+                            link: "/knowledge/graph/README.md",
                             children: [
-
+                                "/knowledge/graph/neo4j.md"
                             ]
+                        },
+                        {
+                            text: "WebSocket",
+                            link: "/knowledge/websocket/README.md",
                         },
                         {
                             text: "Web 服务器",
@@ -151,7 +254,17 @@ module.exports = {
                             text: "大规模构建",
                             link: "/knowledge/scalability/README.md",
                             children: [
-                                "/knowledge/scalability/migration_strategies/README.md",
+                                {
+                                    text: "迁移策略",
+                                    link: "/knowledge/scalability/migration/README.md",
+                                    children: [
+                                        "/knowledge/scalability/migration/degradation.md",
+                                        "/knowledge/scalability/migration/throttling.md",
+                                        "/knowledge/scalability/migration/backpressure.md",
+                                        "/knowledge/scalability/migration/loadshifting.md",
+                                        "/knowledge/scalability/migration/circuit.md",
+                                    ]
+                                },
                                 "/knowledge/scalability/understand_diff/README.md",
                                 "/knowledge/scalability/horizontal_vs_vertical_scaling/README.md",
                                 "/knowledge/scalability/observability/README.md",
