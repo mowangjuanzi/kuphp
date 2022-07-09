@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-0482fadc","path":"/knowledge/api/grpc.html","title":"gRPC","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1657378386000,"contributors":[{"name":"mowangjuanzi","email":"baoguoxiao0538@hotmail.com","commits":1}]},"filePathRelative":"knowledge/api/grpc.md"}');export{a as data};

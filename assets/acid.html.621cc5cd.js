@@ -1,0 +1,1 @@
+import{_ as a,o as c,c as t,a as e,d as r}from"./app.deeaf1bd.js";const d={},o=e("h1",{id:"acid",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#acid","aria-hidden":"true"},"#"),r(" ACID")],-1),s=[o];function _(i,n){return c(),t("div",null,s)}var l=a(d,[["render",_],["__file","acid.html.vue"]]);export{l as default};

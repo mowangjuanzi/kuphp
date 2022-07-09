@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-d57b566c","path":"/knowledge/security/http/cors.html","title":"CORS","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1657378386000,"contributors":[{"name":"mowangjuanzi","email":"baoguoxiao0538@hotmail.com","commits":1}]},"filePathRelative":"knowledge/security/http/cors.md"}');export{t as data};

@@ -1,0 +1,1 @@
+import{_ as r,o as a,c as o,a as e,d as t}from"./app.deeaf1bd.js";const c={},s=e("h1",{id:"orm",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#orm","aria-hidden":"true"},"#"),t(" ORM")],-1),_=[s];function n(d,i){return a(),o("div",null,_)}var l=r(c,[["render",n],["__file","orm.html.vue"]]);export{l as default};

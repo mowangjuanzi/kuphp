@@ -1,0 +1,1 @@
+import{_ as a,o as t,c as _,a as e,d as n}from"./app.deeaf1bd.js";const r={},s=e("h1",{id:"n-1",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#n-1","aria-hidden":"true"},"#"),n(" N+1")],-1),c=[s];function o(d,l){return t(),_("div",null,c)}var h=a(r,[["render",o],["__file","n_plus_1.html.vue"]]);export{h as default};

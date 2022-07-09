@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-9c44be7c","path":"/knowledge/nosql/realtime.html","title":"\u5B9E\u65F6\u6570\u636E\u5E93","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1657378386000,"contributors":[{"name":"mowangjuanzi","email":"baoguoxiao0538@hotmail.com","commits":1}]},"filePathRelative":"knowledge/nosql/realtime.md"}');export{e as data};

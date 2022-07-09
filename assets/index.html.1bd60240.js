@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-315adb2e","path":"/knowledge/principles/","title":"\u8BBE\u8BA1\u548C\u5F00\u53D1\u539F\u5219","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1657378386000,"contributors":[{"name":"mowangjuanzi","email":"baoguoxiao0538@hotmail.com","commits":1}]},"filePathRelative":"knowledge/principles/README.md"}');export{e as data};

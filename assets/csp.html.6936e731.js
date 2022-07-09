@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-4cdfd0ca","path":"/knowledge/security/http/csp.html","title":"Content-Security-Policy","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1657378386000,"contributors":[{"name":"mowangjuanzi","email":"baoguoxiao0538@hotmail.com","commits":1}]},"filePathRelative":"knowledge/security/http/csp.md"}');export{t as data};

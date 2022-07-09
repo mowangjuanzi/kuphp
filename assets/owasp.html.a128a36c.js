@@ -1,0 +1,1 @@
+import{_ as a,o,c as s,a as e,d as t}from"./app.deeaf1bd.js";const r={},c=e("h1",{id:"owasp",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#owasp","aria-hidden":"true"},"#"),t(" OWASP")],-1),_=[c];function n(d,i){return o(),s("div",null,_)}var l=a(r,[["render",n],["__file","owasp.html.vue"]]);export{l as default};

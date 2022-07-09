@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-4e8ce634","path":"/knowledge/api/rest.html","title":"RESTful","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1657378386000,"contributors":[{"name":"mowangjuanzi","email":"baoguoxiao0538@hotmail.com","commits":1}]},"filePathRelative":"knowledge/api/rest.md"}');export{e as data};
