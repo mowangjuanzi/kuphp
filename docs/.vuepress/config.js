@@ -23,6 +23,10 @@ module.exports = {
                         link: "/knowledge",
                     },
                     {
+                        text: "博客",
+                        link: "/blog"
+                    },
+                    {
                         text: "资源",
                         children: [
                             {
@@ -268,6 +272,14 @@ module.exports = {
                                 "/knowledge/scalability/understand_diff/README.md",
                                 "/knowledge/scalability/horizontal_vs_vertical_scaling/README.md",
                                 "/knowledge/scalability/observability/README.md",
+                            ]
+                        }
+                    ],
+                    "/blog": [
+                        {
+                            text: "Linux",
+                            children: [
+                                "/blog/linux/ubuntu-static-ip.md"
                             ]
                         }
                     ]
