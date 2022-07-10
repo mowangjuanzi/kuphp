@@ -1,1 +1,0 @@
-import{_ as r,o as a,c,a as e,d as s}from"./app.deeaf1bd.js";const t={},o=e("h1",{id:"\u5FAE\u670D\u52A1",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#\u5FAE\u670D\u52A1","aria-hidden":"true"},"#"),s(" \u5FAE\u670D\u52A1")],-1),_=[o];function i(n,d){return a(),c("div",null,_)}var l=r(t,[["render",i],["__file","microservices.html.vue"]]);export{l as default};

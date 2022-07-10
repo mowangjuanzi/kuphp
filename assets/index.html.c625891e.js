@@ -1,1 +1,0 @@
-import{_ as t,o as a,c,a as e,d as o}from"./app.deeaf1bd.js";const r={},s=e("h1",{id:"websocket",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#websocket","aria-hidden":"true"},"#"),o(" WebSocket")],-1),n=[s];function d(_,i){return a(),c("div",null,n)}var l=t(r,[["render",d],["__file","index.html.vue"]]);export{l as default};

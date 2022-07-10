@@ -1,1 +1,0 @@
-import{_ as t,o as a,c as r,a as e,d as c}from"./app.deeaf1bd.js";const o={},s=e("h1",{id:"github",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#github","aria-hidden":"true"},"#"),c(" GitHub")],-1),i=[s];function _(n,d){return a(),r("div",null,i)}var u=t(o,[["render",_],["__file","github.html.vue"]]);export{u as default};

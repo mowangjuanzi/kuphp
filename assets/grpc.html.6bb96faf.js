@@ -1,1 +1,0 @@
-import{_ as r,o as a,c,a as e,d as t}from"./app.deeaf1bd.js";const o={},s=e("h1",{id:"grpc",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#grpc","aria-hidden":"true"},"#"),t(" gRPC")],-1),_=[s];function n(d,i){return a(),c("div",null,_)}var l=r(o,[["render",n],["__file","grpc.html.vue"]]);export{l as default};

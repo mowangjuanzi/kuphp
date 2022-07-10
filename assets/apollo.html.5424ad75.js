@@ -1,1 +1,0 @@
-import{_ as o,o as a,c as t,a as e,d as l}from"./app.deeaf1bd.js";const r={},c=e("h1",{id:"apollo",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#apollo","aria-hidden":"true"},"#"),l(" Apollo")],-1),s=[c];function _(n,d){return a(),t("div",null,s)}var h=o(r,[["render",_],["__file","apollo.html.vue"]]);export{h as default};

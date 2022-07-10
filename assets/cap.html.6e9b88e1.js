@@ -1,1 +1,0 @@
-import{_ as a,o as c,c as t,a as e,d as r}from"./app.deeaf1bd.js";const o={},s=e("h1",{id:"cap-\u5B9A\u7406",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#cap-\u5B9A\u7406","aria-hidden":"true"},"#"),r(" CAP \u5B9A\u7406")],-1),_=[s];function n(d,i){return c(),t("div",null,_)}var l=a(o,[["render",n],["__file","cap.html.vue"]]);export{l as default};
