@@ -27,6 +27,15 @@ module.exports = {
                         link: "/blog"
                     },
                     {
+                        text: "编程语言",
+                        children: [
+                            {
+                                text: "Golang",
+                                link: "/golang/"
+                            }
+                        ]
+                    },
+                    {
                         text: "资源",
                         children: [
                             {
@@ -282,7 +291,11 @@ module.exports = {
                                 "/blog/linux/ubuntu-static-ip.md"
                             ]
                         }
-                    ]
+                    ],
+                    "/golang": [
+                        "/golang/README.md",
+                        "/golang/basic.md",
+                    ],
                 }
             }
         }
