@@ -1,1 +1,0 @@
-import{_ as t,o as r,c as a,a as e,d as s}from"./app.8471ce40.js";const c={},o=e("h1",{id:"restful",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#restful","aria-hidden":"true"},"#"),s(" RESTful")],-1),_=[o];function n(d,l){return r(),a("div",null,_)}var i=t(c,[["render",n],["__file","rest.html.vue"]]);export{i as default};

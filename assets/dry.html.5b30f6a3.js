@@ -1,1 +1,0 @@
-import{_ as r,o as a,c as t,a as e,d as c}from"./app.8471ce40.js";const d={},o=e("h1",{id:"dry",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#dry","aria-hidden":"true"},"#"),c(" DRY")],-1),s=[o];function _(n,i){return a(),t("div",null,s)}var l=r(d,[["render",_],["__file","dry.html.vue"]]);export{l as default};
