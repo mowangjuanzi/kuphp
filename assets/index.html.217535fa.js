@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-5d352c55","path":"/golang/api/","title":"API \u5BA2\u6237\u7AEF","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1657790735000,"contributors":[{"name":"mowangjuanzi","email":"baoguoxiao0538@hotmail.com","commits":1}]},"filePathRelative":"golang/api/README.md"}');export{a as data};

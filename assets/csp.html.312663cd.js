@@ -1,1 +1,0 @@
-import{_ as t,o as c,c as o,a as e,d as a}from"./app.4df1de64.js";const r={},n=e("h1",{id:"content-security-policy",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#content-security-policy","aria-hidden":"true"},"#"),a(" Content-Security-Policy")],-1),s=[n];function i(_,d){return c(),o("div",null,s)}var h=t(r,[["render",i],["__file","csp.html.vue"]]);export{h as default};

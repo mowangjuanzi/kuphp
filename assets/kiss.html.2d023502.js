@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as t,a as e,d as r}from"./app.effe2eb5.js";const c={},o=e("h1",{id:"kiss",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#kiss","aria-hidden":"true"},"#"),r(" KISS")],-1),_=[o];function i(n,d){return a(),t("div",null,_)}var l=s(c,[["render",i],["__file","kiss.html.vue"]]);export{l as default};

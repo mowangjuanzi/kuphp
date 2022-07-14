@@ -1,0 +1,1 @@
+import{_ as r,o as s,c as a,a as e,d as t}from"./app.effe2eb5.js";const c={},o=e("h1",{id:"\u65E0\u670D\u52A1",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#\u65E0\u670D\u52A1","aria-hidden":"true"},"#"),t(" \u65E0\u670D\u52A1")],-1),_=[o];function n(d,l){return s(),a("div",null,_)}var h=r(c,[["render",n],["__file","serverless.html.vue"]]);export{h as default};

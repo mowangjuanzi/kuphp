@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-8b3115d8","path":"/golang/basic/loop.html","title":"\u5FAA\u73AF","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1657790735000,"contributors":[{"name":"mowangjuanzi","email":"baoguoxiao0538@hotmail.com","commits":1}]},"filePathRelative":"golang/basic/loop.md"}');export{a as data};

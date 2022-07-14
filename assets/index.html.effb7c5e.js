@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-3aa611b6","path":"/golang/deeper/","title":"\u6DF1\u5165","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1657790735000,"contributors":[{"name":"mowangjuanzi","email":"baoguoxiao0538@hotmail.com","commits":1}]},"filePathRelative":"golang/deeper/README.md"}');export{e as data};

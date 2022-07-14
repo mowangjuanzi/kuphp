@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-704547de","path":"/golang/microservice/","title":"\u5FAE\u670D\u52A1\u5DE5\u5177","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1657790735000,"contributors":[{"name":"mowangjuanzi","email":"baoguoxiao0538@hotmail.com","commits":1}]},"filePathRelative":"golang/microservice/README.md"}');export{e as data};

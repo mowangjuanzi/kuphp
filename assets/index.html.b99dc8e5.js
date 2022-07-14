@@ -1,0 +1,1 @@
+import{_ as a,o as t,c as r,a as e,d as c}from"./app.effe2eb5.js";const n={},o=e("h1",{id:"api-\u5BA2\u6237\u7AEF",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#api-\u5BA2\u6237\u7AEF","aria-hidden":"true"},"#"),c(" API \u5BA2\u6237\u7AEF")],-1),s=[o];function d(_,i){return t(),r("div",null,s)}var l=a(n,[["render",d],["__file","index.html.vue"]]);export{l as default};

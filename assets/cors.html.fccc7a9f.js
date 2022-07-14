@@ -1,1 +1,0 @@
-import{_ as r,o as a,c,a as e,d as o}from"./app.4df1de64.js";const s={},t=e("h1",{id:"cors",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#cors","aria-hidden":"true"},"#"),o(" CORS")],-1),_=[t];function n(d,i){return a(),c("div",null,_)}var l=r(s,[["render",n],["__file","cors.html.vue"]]);export{l as default};
