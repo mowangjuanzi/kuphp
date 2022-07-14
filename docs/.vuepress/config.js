@@ -288,13 +288,91 @@ module.exports = {
                         {
                             text: "Linux",
                             children: [
-                                "/blog/linux/ubuntu-static-ip.md"
+                                "/blog/linux/ubuntu-static-ip.md",
+                                "/blog/linux/linux-appimage.md",
                             ]
                         }
                     ],
                     "/golang": [
                         "/golang/README.md",
-                        "/golang/basic.md",
+                        {
+                            text: "基础",
+                            link: "/golang/basic/README.md",
+                            children: [
+                                "/golang/basic/syntax.md",
+                                "/golang/basic/datatype.md",
+                                "/golang/basic/loop.md"
+                            ]
+                        },
+                        {
+                            text: "深入",
+                            link: "/golang/deeper/README.md",
+                            children: [
+
+                            ]
+                        },
+                        {
+                            text: "构建 CLI",
+                            link: "/golang/cli/README.md",
+                            children: [
+
+                            ]
+                        },
+                        {
+                            text: "ORM",
+                            link: "/golang/orm/README.md",
+                            children: [
+
+                            ]
+                        },
+                        {
+                            text: "Web 框架",
+                            link: "/golang/framework/README.md",
+                            children: [
+
+                            ]
+                        },
+                        {
+                            text: "日志",
+                            link: "/golang/logging/README.md",
+                            children: [
+
+                            ]
+                        },
+                        {
+                            text: "实时通讯",
+                            link: "/golang/communication/README.md",
+                            children: [
+
+                            ]
+                        },
+                        {
+                            text: "API 客户端",
+                            link: "/golang/api/README.md",
+                            children: [
+
+                            ]
+                        },
+                        {
+                            text: "测试",
+                            link: "/golang/testing/README.md",
+                            children: [
+
+                            ]
+                        },
+                        {
+                            text: "微服务工具",
+                            link: "/golang/microservice/README.md",
+                            children: [
+
+                            ]
+                        },
+                        {
+                            text: "更多",
+                            children: [
+                                "/golang/more/specification.md"
+                            ]
+                        }
                     ],
                 }
             }
